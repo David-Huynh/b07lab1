@@ -2,7 +2,7 @@ public class Polynomial {
     double [] coeff;
 
     public Polynomial() {
-        coeff = new double[0];
+        coeff = new double[1];
     }
 
     public Polynomial(double [] init_coeff) {
