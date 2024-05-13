@@ -1,7 +1,7 @@
 public class Polynomial {
     double [] coeff;
 
-    public Polynomial(){
+    public Polynomial() {
         coeff = new double[0];
     }
 
@@ -9,7 +9,9 @@ public class Polynomial {
         coeff = init_coeff;
     }
 
-    // Assumes polynomials are always ordered by increasing power and that even coeff of 0 are counted
+    /**
+     * Assumes the two polynomials' coefficients are ordered the same and coefficients of 0 are counted
+     */ 
     public Polynomial add(Polynomial b) {
         int maxLength = Math.max(coeff.length, b.coeff.length);
         double [] newCoeff = new double[maxLength];
